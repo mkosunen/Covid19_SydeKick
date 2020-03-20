@@ -4,3 +4,6 @@
 [submodule "Entities/thesdk_helpers"]
 	path = Entities/thesdk_helpers
 	url = git@github.com:TheSystemDevelopmentKit/thesdk_helpers.git
+[submodule "covid19"]
+	path = covid19
+	url = git@github.com:mkosunen/covid19.git

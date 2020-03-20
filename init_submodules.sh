@@ -3,6 +3,7 @@
 #Written by by Marko Kosunen, marko.kosunen@aalto.fi, 2017
 DIR=$( cd `dirname $0` && pwd )
 SUBMODULES="\
+    ./Entities/covid19 \
     ./Entities/thesdk \
     ./Entities/thesdk_helpers"
 git submodule sync

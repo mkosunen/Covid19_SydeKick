@@ -1,8 +1,8 @@
 #!/bin/sh
-#Last modification by Marko Kosunen, marko.kosunen@aalto.fi, 10.11.2018 17:02
 #This script will set up some configuration  variables to be used by TheSDK by creating 
 #a file TheSDK.config that can be included to all other shell scripts
-PYTHON="python3.6"
+THISDIR=
+PYTHON="python3.7"
 MATLAB="matlab"
 #this is your primary, top level modeling language
 CONTROLLER="PYTHON"
@@ -39,4 +39,7 @@ PY="bsub -K ${PYTHON}"
 PYI="bsub -I ${PYTHON}"
 
 EOF
+
+
+
 

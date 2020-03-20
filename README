@@ -33,39 +33,16 @@ version.
 ~>./pip3userinstall.sh
 
 
--To test your environment
-cd Simulations/Inverter 
-For Python:
-~>./configure && make clean && make all
-(Dependency tracking for Python currently not functional)
+HOW TO SIMULATE COVID19
+cd Entities/covid19
+./configure && make
 
-'make all' by default uses LSF submission. If that for some reason does not work, try
-~>./configure && make clean && make pyl && make slides
+To make documentation (after configuration
+make doc
 
-If you wish to test the Python functionality only, edit Simulations/Inverter/configure
-antd Change the line
-PYTHONMODELS="[ 'py', 'vhdl', 'sv' ]"
-to
-PYTHONMODELS="[ 'py', 'py', 'py' ]"
-and run 
-./configure && make clean && make pyl && make slides
+Read the doc
+firefox doc/build/html/index.html
 
-
-For Matlab:
-~>./configure -C && make all
-
-Check the results in ./Slides/pdffiles/Inverter.pdf
-
------
-TO CREATE AND TEST NEW SIMULATIONS
-
-Create a simulation for the chain of inverters:
-cd ./Simulations
-./Simtemplate/initsim <NAME>
-
-Check the results
-cd <NAME> && ./configure && make all
-Check the results in ./Slides/pdffiles/<Name>.pdf
 
 
 HOW TO USE TheSDK

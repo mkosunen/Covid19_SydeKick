@@ -43,6 +43,31 @@ EOF
 echo "Configuring $THISDIR/Entities/covid19"
 cd $THISDIR/Entities/covid19 && ./configure
 cd $THISDIR
+
+
+
+MODULEDIR=$THISDIR/Entities/covid19
+MODULE=$( basename ${THISDIR})
+
+
+CURRENTFILE=${THISDIR}/Makefile
+echo "Generating Makefile"
+
+cat << EOF > ${THISDIR}/Makefile
+
+.PHONY: all sim clean
+
+all: sim
+
+sim:
+	cd ${MODULEDIR} && make sim
+
+clean:
+	cd ${MODULEDIR} && make clean
+   
+EOF
+
+
 exit 0
 
 

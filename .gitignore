@@ -1,4 +1,5 @@
 TheSDK.config
+Makefile
 __pycache__
 *.eps
 *.pdf

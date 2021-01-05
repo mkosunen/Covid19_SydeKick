@@ -2,7 +2,7 @@
 #This script will set up some configuration  variables to be used by TheSDK by creating 
 #a file TheSDK.config that can be included to all other shell scripts
 THISDIR=$( cd `dirname $0`&& pwd)
-PYTHON="python3.7"
+PYTHON="python3"
 MATLAB="matlab"
 #this is your primary, top level modeling language
 CONTROLLER="PYTHON"

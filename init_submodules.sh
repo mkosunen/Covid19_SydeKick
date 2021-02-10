@@ -5,7 +5,7 @@ DIR=$( cd `dirname $0` && pwd )
 SUBMODULES="\
     ./Entities/covid19 \
     ./Entities/thesdk \
-    ./Entities/thesdk_helpers"
+    ./thesdk_helpers"
 git submodule sync
 for mod in $SUBMODULES; do 
     git submodule update --init $mod
